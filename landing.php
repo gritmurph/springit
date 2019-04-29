@@ -16,7 +16,8 @@ body {
 .header {
   padding: 30px;
   text-align: center;
-  background: white;
+  background-image: url(header.jpg);
+  background-size: 100%;
 }
 
 .header h1 {
@@ -45,18 +46,27 @@ body {
   color: black;
 }
 
+.column a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .column {   
   overflow: hidden;
   background-color: white;
+  font: impact;
+
 }
 
 .column a{
   display: block;
   color: red;
   text-align: center;
-  padding: 14px 16px;
+  font-size: 100px;
+  font: impact;
+  padding: 140px 160px;
   text-decoration: none;
 }
 
@@ -65,6 +75,7 @@ body {
   .column{   
     width: 100%;
     padding: 0;
+    font: impact;
   }
 }
 
@@ -74,6 +85,7 @@ body {
     float: none;
     width: 100%;
   }
+  
 }
 </style>
 </head>
@@ -81,7 +93,7 @@ body {
 
 <div class="header">
   <h1>Football Statistics</h1>
-  <p>See how successful each NFL team was in a particular situtation!</p>
+  <p>See how successful each NFL team was in a particular game situtation!</p>
 </div>
 
 <div class="topnav">
@@ -91,7 +103,7 @@ body {
   <a href="#" style="float:right">Link</a>
 </div>
   <div class="column">
-    <a href="chose_a_team.php">Chose a Team</a>
+    <a href="chose_a_team.php" sytle="font-family:arial">CHOOSE A TEAM</a>
   </div>
 </div>
 

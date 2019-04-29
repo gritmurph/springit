@@ -74,7 +74,32 @@ footer {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
 
 </style>
 </head>
@@ -83,6 +108,12 @@ footer {
 <header>
     <h1>Team Name</h1>
 </header>
+<div class="topnav">
+  <a href="landing.php">Home</a>
+  <a href="#">About</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
 
 </body>
 </html>

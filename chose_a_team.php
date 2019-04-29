@@ -134,7 +134,7 @@ footer {
   <button class="dropbtn">AFC North</button>
   <div class = "leftcolumn">
     <div class="dropdown-content">
-      <a href="#">Baltimore Ravens</a>
+      <a href="team.php">Baltimore Ravens</a>
       <a href="#">Cincinnati Bengals</a>
       <a href="#">Cleveland Browns</a>
       <a href="#">Cleveland Browns</a>
