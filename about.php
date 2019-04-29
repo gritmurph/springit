@@ -1,11 +1,6 @@
-<!-- This is our Main Home page -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Football Statistics</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
@@ -96,44 +91,36 @@ body {
 </head>
 <body>
 
-<div class= "header">
-    <h1>Team Name</h1>
-    <p>See how successful each NFL team was in a particular game situtation!</p>
+<div class="header">
+  <h1>Football Statistics</h1>
+  <p>See how successful each NFL team was in a particular game situtation!</p>
 </div>
+
 <div class="topnav">
   <a href="landing.php">Home</a>
   <a href="about.php">About</a>
 </div>
+<p>
+
+This website shows you how a certain NFL team did in a chosen game situation. For example, you can check 
+whether the Cincinnati Bengals got more yards running the ball or passing the ball on 2nd and 10 from their 
+own 30 yardline in the 2nd quarter. 
+<br>
+<br>
+Statistics displayed given a team and a situation:
+<br>
+<br>
+Shows whether a run or a pass gained the most yards, and how many yards that was.
+<br>
+Shows whether a run or a pass gained the least yards, and how many yards that was.
+Shows the average number of yards on a run.
+<br>
+Shows the average number of yards on a pass.
+<br>
+Shows the average number of yards in that situation.
+  
+
+</p>
 
 </body>
 </html>
-
-<!-- START OF PHP -->
-
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "123456";
-// Whatever activity we named for our database
-$dbname = "Activity4";
-
-//Set up
-$conn = new mysqli($servername, $username, $password);
-
-mysqli_select_db($conn, $dbname) or die("Could not open the '$dbname'");
-
-
-// Querey Section
-$test_query = "SELECT * FROM instructor";
-$result = mysqli_query($conn, $test_query);
-
-$tuple_count = 0;
-while($row = mysqli_fetch_array($result)) {
-  $tuple_count++;
-  echo "<p> You have this instructor: $row[1] with ID $row[0]";
-}
-
-echo "<p> There are $tuple_count instructors";
-
-?>
-<!-- END OF PHP -->

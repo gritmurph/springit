@@ -4,30 +4,26 @@
 <html lang="en">
 <head>
 <title>Football Statistics</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
 }
 
-/* Style the header */
-header {
-  background-color: #FF2D00;
+/* Header/Blog Title */
+.header {
   padding: 30px;
   text-align: center;
-  font-size: 35px;
-  color: white;
+  background-image: url(header.jpg);
+  background-size: 100%;
 }
-
-article {
-  float: left;
-  width: 50%;
-  background-color: #f1f1f1;
+.header h1 {
+  font-size: 50px;
 }
 
 .leftcolumn {   
@@ -52,7 +48,7 @@ footer {
 
 
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: red;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -67,7 +63,7 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -80,11 +76,11 @@ footer {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: blue;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: gray;}
 
 .topnav {
   overflow: hidden;
@@ -118,14 +114,13 @@ footer {
 </head>
 <body>
 
-<header>
+<div class= "header">
     <h1>Football Statistics</h1>
-</header>
+    <p>See how successful each NFL team was in a particular game situtation!</p>
+</div>
 <div class="topnav">
   <a href="landing.php">Home</a>
-  <a href="#">About</a>
-  <a href="#">Link</a>
-  <a href="#" style="float:right">Link</a>
+  <a href="about.php">About</a>
 </div>
 
 <h2>CHOSE A TEAM: </h2>

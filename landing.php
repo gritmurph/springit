@@ -98,9 +98,7 @@ body {
 
 <div class="topnav">
   <a href="landing.php">Home</a>
-  <a href="#">About</a>
-  <a href="#">Link</a>
-  <a href="#" style="float:right">Link</a>
+  <a href="about.php">About</a>
 </div>
   <div class="column">
     <a href="chose_a_team.php" sytle="font-family:arial">CHOOSE A TEAM</a>
