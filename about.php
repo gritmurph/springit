@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Football Statistics</title>
 <style>
 * {
   box-sizing: border-box;

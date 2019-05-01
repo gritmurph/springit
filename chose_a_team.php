@@ -1,5 +1,3 @@
-<!-- This is our Main Home page -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,31 +17,12 @@ body {
 .header {
   padding: 30px;
   text-align: center;
+  /* https://pngtree.com/freebackground/cool-colored-background_384869.html */
   background-image: url(header.jpg);
   background-size: 100%;
 }
 .header h1 {
   font-size: 50px;
-}
-
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 50%;
-  background-color: #f1f1f1;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
 }
 
 
