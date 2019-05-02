@@ -146,10 +146,10 @@ body {
   <button class="dropbtn">AFC North</button>
   <div class = "leftcolumn">
     <div class="dropdown-content">
-      <a href="team.php">Baltimore Ravens</a>
-      <a href="#">Cincinnati Bengals</a>
-      <a href="#">Cleveland Browns</a>
-      <a href="#">Cleveland Browns</a>
+      <a href="ravens.php">Baltimore Ravens</a>
+      <a href="bengals.php">Cincinnati Bengals</a>
+      <a href="browns.php">Cleveland Browns</a>
+      <a href="steelers.php">Pittsburgh Steelers</a>
     </div>
   </div>
 </div>
@@ -158,10 +158,10 @@ body {
   <button class="dropbtn">AFC East</button>
   <div class = "leftcolumn">
     <div class="dropdown-content">
-      <a href="#">Buffalo Bills</a>
-      <a href="#">Miami Dolphins</a>
-      <a href="#">New England Patriots</a>
-      <a href="#">New York Jets</a>
+      <a href="bills.php">Buffalo Bills</a>
+      <a href="dolphins.php">Miami Dolphins</a>
+      <a href="patriots.php">New England Patriots</a>
+      <a href="jets.php">New York Jets</a>
     </div>
   </div>
 </div>
@@ -171,10 +171,10 @@ body {
   <div class = "leftcolumn">
 
     <div class="dropdown-content">
-      <a href="#">Houston Texans</a>
-      <a href="#">Indianapolis Colts</a>
-      <a href="#">Jacksonville Jaguars</a>
-      <a href="#">Tennessee Titans</a>
+      <a href="texans.php">Houston Texans</a>
+      <a href="colts.php">Indianapolis Colts</a>
+      <a href="jaguars.php">Jacksonville Jaguars</a>
+      <a href="titans.php">Tennessee Titans</a>
     </div>
   </div>
 </div>
@@ -184,10 +184,10 @@ body {
   <div class = "leftcolumn">
 
     <div class="dropdown-content">
-      <a href="#">Denver Broncos</a>
-      <a href="#">Kansas City Chiefs</a>
-      <a href="#">Oakland Raiders</a>
-      <a href="#">Pittsburgh Steelers</a>
+      <a href="broncos.php">Denver Broncos</a>
+      <a href="chiefs.php">Kansas City Chiefs</a>
+      <a href="raiders.php">Oakland Raiders</a>
+      <a href="chargers.php">San Diego Chargers </a>
     </div>
   </div>
 </div>
@@ -197,10 +197,10 @@ body {
   <div class = "rightcolumn">
 
     <div class="dropdown-content">
-      <a href="#">Chicago Bears</a>
-      <a href="#">Detroit Lions</a>
-      <a href="#">Green Bay Packers</a>
-      <a href="#">Minnesota Vikings</a>
+      <a href="bears.php">Chicago Bears</a>
+      <a href="lions.php">Detroit Lions</a>
+      <a href="packers.php">Green Bay Packers</a>
+      <a href="vikings.php">Minnesota Vikings</a>
     </div>
   </div>
 </div>
@@ -210,10 +210,10 @@ body {
   <div class = "rightcolumn">
 
     <div class="dropdown-content">
-      <a href="#">Dallas Cowboys</a>
-      <a href="#">New York Giants</a>
-      <a href="#">Philadelphia Eagles</a>
-      <a href="#">Washington Redskins</a>
+      <a href="cowboys.php">Dallas Cowboys</a>
+      <a href="giants.php">New York Giants</a>
+      <a href="eagles.php">Philadelphia Eagles</a>
+      <a href="redskins.php">Washington Redskins</a>
     </div>
   </div>
 </div>
@@ -222,10 +222,10 @@ body {
   <button class="dropbtn">NFC South</button>
   <div class = "rightcolumn">
     <div class="dropdown-content">
-      <a href="#">Atlanta Falcons</a>
-      <a href="#">Carolina Panthers</a>
-      <a href="#">New Orleans Saints</a>
-      <a href="#">Tampa Bay Buccaneers</a>
+      <a href="falcons.php">Atlanta Falcons</a>
+      <a href="panthers.php">Carolina Panthers</a>
+      <a href="saints.php">New Orleans Saints</a>
+      <a href="buccaneers.php">Tampa Bay Buccaneers</a>
     </div>
   </div>
 </div>
@@ -235,10 +235,10 @@ body {
   <div class = "rightcolumn">
 
     <div class="dropdown-content">
-      <a href="#">Arizona Cardinals</a>
-      <a href="#">St. Louis Rams</a>
-      <a href="#">San Francisco 49ers</a>
-      <a href="#">Seattle Seahawks</a>
+      <a href="cardinals.php">Arizona Cardinals</a>
+      <a href="rams.php">St. Louis Rams</a>
+      <a href="49ers.php">San Francisco 49ers</a>
+      <a href="seahawks.php">Seattle Seahawks</a>
     </div>
   </div>
 </div>
