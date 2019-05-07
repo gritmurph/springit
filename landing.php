@@ -146,8 +146,14 @@ body {
   <button class="dropbtn">AFC North</button>
   <div class = "leftcolumn">
     <div class="dropdown-content">
+  
       <a href="ravens.php">Baltimore Ravens</a>
-      <a href="bengals.php">Cincinnati Bengals</a>
+
+      <form action="bengals.php" method="get" name = "team">
+        <a value="bengals" href="bengals.php">Cincinnati Bengals</a>
+      </form>
+
+
       <a href="browns.php">Cleveland Browns</a>
       <a href="steelers.php">Pittsburgh Steelers</a>
     </div>
