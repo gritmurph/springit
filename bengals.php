@@ -161,6 +161,17 @@ body {
     </form> -->
 
     <form action="oneyearresults.php" method="get">
+
+    <label for="team">
+        <span>Team:</span>
+      </label>
+      <select name="team">
+        <option value="bengals">Bengals</option>
+      </select>
+
+      <br>
+      <br>
+
       <label for="quarter">
         <span>Quarter:</span>
       </label>
@@ -292,39 +303,5 @@ body {
 
 </section>
 
-
-
-<!-- START OF PHP -->
-
-<?php
-
-// $servername = "year2";
-// $username = "root";
-// $password = "123456";
-// // Whatever activity we named for our database
-// $dbname = "Activity4";
-
-// // $_POST['id'];
-
-// //Set up
-// $conn = new mysqli($servername, $username, $password);
-
-// mysqli_select_db($conn, $dbname) or die("Could not open the '$dbname'");
-
-
-// // Querey Section
-// $test_query = "SELECT * FROM instructor";
-// $result = mysqli_query($conn, $test_query);
-
-// $tuple_count = 0;
-// while($row = mysqli_fetch_array($result)) {
-//   $tuple_count++;
-//   echo "<p> You have this instructor: $row[1] with ID $row[0]";
-// }
-
-// echo "<p> There are $tuple_count instructors";
-
-?>
-<!-- END OF PHP -->
 </body>
 </html>

@@ -145,9 +145,6 @@ body {
   <a href="about.php">About</a>
 </div>
 
-</body>
-</html>
-
 <!-- Form page -->
 <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form -->
 
@@ -157,57 +154,63 @@ body {
 
     <h3>Show One Year:</h3>
 
-    <p>
+    <!-- <form action="/compareyearsresults.php" method="get" target="_blank">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+        <input type="submit" value="Submit">
+    </form> -->
+
+    <form action="oneyearresults.php" method="get">
+
+    <label for="team">
+        <span>Team:</span>
+      </label>
+      <select name="team">
+        <option value="49ers">49ers</option>
+      </select>
+
+      <br>
+      <br>
+
       <label for="quarter">
         <span>Quarter:</span>
       </label>
-      <select id="quarter" name="usercard">
+      <select name="quarter">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
       </select>
-    </p>
-    <p>
-    <p>
+
+      <br>
+      <br>
+
       <label for="down">
         <span>Down:</span>
       </label>
-      <select id="down" name="usercard">
+      <select name="down">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
       </select>
-    </p>
-    <p>
+      
+      <br>
+      <br>
 
-    <p>
       <label for="distance">
         <span>Distance:</span>
       </label>
-      <select id="distance" name="usercard">
-        <option value="1">Short (1 - 5 yards)</option>
-        <option value="2">Medium (6 - 10 yards)</option>
-        <option value="3">Long (11 - 15 yards)</option>
-        <option value="4">Very Long (15+ yards)</option>
+      <select name="distance">
+        <option value="1-5">Short (1 - 5 yards)</option>
+        <option value="6-10">Medium (6 - 10 yards)</option>
+        <option value="11-15">Long (11 - 15 yards)</option>
+        <option value="15+">Very Long (15+ yards)</option>
       </select>
-    </p>
-    <p>
 
-    <p>
-      <label for="field position">
-        <span>Field Position:</span>
-      </label>
-      <select id="field position" name="usercard">
-        <option value="1">Own 1 - 25</option>
-        <option value="2">Own 26 - 50</option>
-        <option value="3">Opponent 49 - 25</option>
-        <option value="4">Opponent 24 - goalline</option>
-      </select>
-    </p>
+      <br>
+      <br>
 
-    <p>
       <label for="year">
         <span>Year:</span>
       </label>
@@ -219,69 +222,59 @@ body {
         <option value="2017">2017</option>
         <option value="2018">2018</option>
       </select>
-    </p>
 
-    <p> <button onclick="window.location.href = 'oneyearresults.php';" type="submit">Submit Choices</button> </p>
+      <p> <button onclick="window.location.href = 'oneyearresults.php';" type="submit">Submit Choices</button> </p>
+
+    </form>
 </section>
 
 <section>
     <h3>Compare Two Years:</h3>
 
-    <p>
+    <form action="compareyearsresults.php" method="get">
       <label for="quarter">
         <span>Quarter:</span>
       </label>
-      <select id="quarter" name="usercard">
+      <select name="quarter">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
       </select>
-    </p>
-    <p>
-    <p>
+
+    <br>
+    <br>
+
       <label for="down">
         <span>Down:</span>
       </label>
-      <select id="down" name="usercard">
+      <select name="down">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
       </select>
-    </p>
-    <p>
 
-    <p>
+      <br>
+      <br>
+
       <label for="distance">
         <span>Distance:</span>
       </label>
-      <select id="distance" name="usercard">
+      <select name="distance">
         <option value="1">Short (1 - 5 yards)</option>
         <option value="2">Medium (6 - 10 yards)</option>
         <option value="3">Long (11 - 15 yards)</option>
         <option value="4">Very Long (15+ yards)</option>
       </select>
-    </p>
-    <p>
 
-    <p>
-      <label for="field position">
-        <span>Field Position:</span>
-      </label>
-      <select id="field position" name="usercard">
-        <option value="1">Own 1 - 25</option>
-        <option value="2">Own 26 - 50</option>
-        <option value="3">Opponent 49 - 25</option>
-        <option value="4">Opponent 24 - goalline</option>
-      </select>
-    </p>
+      <br>
+      <br>
 
-    <p>
       <label for="year1">
         <span>First Year:</span>
       </label>
-      <select id="year1" name="usercard">
+      <select name="year1">
         <option value="2013">2013</option>
         <option value="2014">2014</option>
         <option value="2015">2015</option>
@@ -289,13 +282,14 @@ body {
         <option value="2017">2017</option>
         <option value="2018">2018</option>
       </select>
-    </p>
 
-    <p>
+      <br>
+      <br>
+
       <label for="year2">
         <span>Second Year:</span>
       </label>
-      <select id="year2" name="usercard">
+      <select name="year2">
         <option value="2013">2013</option>
         <option value="2014">2014</option>
         <option value="2015">2015</option>
@@ -303,15 +297,11 @@ body {
         <option value="2017">2017</option>
         <option value="2018">2018</option>
       </select>
-    </p>
 
     <p> <button onclick="window.location.href = 'compareyearsresults.php';" type="submit">Submit Choices</button> </p>
+  </form>
+
 </section>
 
-
-
-<!-- START OF PHP -->
-
-<?php
-?>
-<!-- END OF PHP -->
+</body>
+</html>
