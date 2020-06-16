@@ -8,13 +8,19 @@ import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 
 @Entity
+@RequiredArgsConstructor
+@Getter @Setter
+@ToString
 @NoArgsConstructor
-@Data
 public class Link extends Auditable {
 	 
 	@Id
@@ -29,6 +35,7 @@ public class Link extends Auditable {
 	@OneToMany(mappedBy = "link")
 	private List<Comment> comments = new ArrayList<>();
 
-
-
+	public void addComment(Comment comment) {
+		comments.add(comment);
+	}
 }
