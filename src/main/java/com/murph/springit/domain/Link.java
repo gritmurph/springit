@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotEmpty;
 
+import org.hibernate.validator.constraints.URL;
 import org.ocpsoft.prettytime.PrettyTime;
 
 import java.net.URI;
@@ -41,6 +42,7 @@ public class Link extends Auditable {
 
 	@NonNull
 	@NotEmpty(message = "Please enter a url.")
+	@URL(message = "Please enter a VALID url.")
     private String url;
 
 
