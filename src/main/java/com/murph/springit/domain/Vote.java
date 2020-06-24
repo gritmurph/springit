@@ -8,8 +8,10 @@ import javax.persistence.ManyToOne;
 import lombok.*;
 
 @Entity
-@Data
+@RequiredArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 public class Vote extends Auditable  {
 	
 	@Id
