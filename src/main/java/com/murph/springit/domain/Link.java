@@ -43,11 +43,16 @@ public class Link extends Auditable {
 	@NonNull
 	@NotEmpty(message = "Please enter a url.")
 	@URL(message = "Please enter a VALID url.")
-    private String url;
-
+	private String url;
+	
 
 	@OneToMany(mappedBy = "link")
 	private List<Comment> comments = new ArrayList<>();
+
+	@OneToMany(mappedBy = "link")
+	private List<Vote> votes = new ArrayList<>();
+
+	private int voteCount = 0;
 
 	public void addComment(Comment comment) {
 		comments.add(comment);
