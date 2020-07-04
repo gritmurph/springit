@@ -13,23 +13,18 @@ import com.murph.springit.service.BeanUtil;
 
 import org.ocpsoft.prettytime.PrettyTime;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @Entity
 @RequiredArgsConstructor
-@Getter @Setter
-@ToString
+@Getter 
+@Setter
 @NoArgsConstructor
 public class Comment extends Auditable {
 
 	@Id
 	@GeneratedValue
-	private long id;
+	private Long id;
 
 	@NonNull
 	private String body;

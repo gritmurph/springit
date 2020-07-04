@@ -1,9 +1,6 @@
 package com.murph.springit.controller;
 
 import java.util.Optional;
-
-import javax.naming.LinkRef;
-
 import com.murph.springit.domain.Link;
 import com.murph.springit.domain.Vote;
 import com.murph.springit.repository.LinkRepository;
